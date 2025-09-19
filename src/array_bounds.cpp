@@ -40,25 +40,22 @@ int frequency(const int * arr, int n, int target){//number of occurrences of the
 
 // Recursive helper versions
 int lower_bound_recursive(const int* arr, int low, int high, int target){
-    
-    if (target>=arr[low]) {//position of the first element that is not less than the target.
+    if (low==high) return high;//if meet end of array, send n=high
+    if (arr[low]>=target) {//position of the first element that is not less than the target.
         return low;//return index where above is true
-    }
-    else{
-        if (low==high) return high;//if meet end of array, send n=high
-        low++;//increment to continue to next element
-        lower_bound_recursive(arr, 0,high,target);//repeat check w/ new low val                 
-    }
+    }    
+    //low++;//increment to continue to next element
+    return lower_bound_recursive(arr, low+1,high,target);//repeat check w/ new low val                 
+    
 }
 int upper_bound_recursive(const int* arr, int low, int high, int target){
-    if (target>arr[low]) {//position of the first element that is greater than (>) the target value
+    if (low==high) return high;//if meet end of array, send n=high
+    if (arr[low]>target) {//position of the first element that is greater than (>) the target value
         return low;//return index where above is true
-    }
-    else{
-        if (low==high) return high;//if meet end of array, send n=high
-        low++;//increment to continue to next element
-        lower_bound_recursive(arr, 0,high,target);//repeat check w/ new low val               
-    }
+    }       
+    //low++;//increment to continue to next element
+    return upper_bound_recursive(arr, low+1,high,target);//repeat check w/ new low val               
+    
 }
 
 // Iterative versions
