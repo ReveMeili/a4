@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/prime.dir/src/main.cpp.o CMakeFiles/prime.dir/src/array_bounds.cpp.o -o prime 

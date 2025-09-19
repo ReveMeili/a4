@@ -1,0 +1,5 @@
+/mnt/c/Users/18048/workspace2/a4/build/CMakeFiles/prime.dir
+/mnt/c/Users/18048/workspace2/a4/build/CMakeFiles/my_test.dir
+/mnt/c/Users/18048/workspace2/a4/build/CMakeFiles/test.dir
+/mnt/c/Users/18048/workspace2/a4/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/18048/workspace2/a4/build/CMakeFiles/rebuild_cache.dir
